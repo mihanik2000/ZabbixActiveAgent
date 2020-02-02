@@ -136,7 +136,7 @@ def main(argv=None):
    # Зададим имена файлам, которые будем использовать
    # Полный список служб
    MyServicesListFile=r'C:\Zabbix\scripts\soft_list\service_list.lst'
-   # Список установленных/удалённых служб
+   # Список недавно установленных/удалённых служб
    MyServicesDiffFile=r'C:\Zabbix\scripts\soft_list\service_diff.lst'
    # Список не работающих служб
    MyServicesStopedFile=r'C:\Zabbix\scripts\soft_list\service_stoped.lst'
