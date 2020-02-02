@@ -1,0 +1,163 @@
+ALG - Служба шлюза уровня приложения
+AdobeFlashPlayerUpdateSvc - Adobe Flash Player Update Service
+AeLookupSvc - Информация о совместимости приложений
+AppIDSvc - Удостоверение приложения
+AppMgmt - Управление приложениями
+Appinfo - Сведения о приложении
+AudioEndpointBuilder - Средство построения конечных точек Windows Audio
+AudioSrv - Windows Audio
+AxInstSV - Установщик ActiveX (AxInstSV)
+BDESVC - Служба шифрования дисков BitLocker
+BFE - Служба базовой фильтрации
+BITS - Фоновая интеллектуальная служба передачи (BITS)
+Browser - Браузер компьютеров
+COMSysApp - Системное приложение COM+
+CertPropSvc - Распространение сертификата
+CryptSvc - Службы криптографии
+CscService - Автономные файлы
+DPS - Служба политики диагностики
+DcomLaunch - Модуль запуска процессов DCOM-сервера
+Dhcp - DHCP-клиент
+DiagTrack - Diagnostics Tracking Service
+Dnscache - DNS-клиент
+EFS - Шифрованная файловая система (EFS)
+EapHost - Расширяемый протокол проверки подлинности (EAP)
+EventSystem - Система событий COM+
+FDResPub - Публикация ресурсов обнаружения функции
+Fax - Факс
+FontCache - Служба кэша шрифтов Windows
+FontCache3.0.0.0 - Кэш шрифтов Windows Presentation Foundation 3.0.0.0
+GoogleChromeElevationService - Google Chrome Elevation Service
+HomeGroupListener - Прослушиватель домашней группы
+HomeGroupProvider - Поставщик домашней группы
+IEEtwCollectorService - Internet Explorer ETW Collector Service
+IKEEXT - Модули ключей IPsec для обмена ключами в Интернете и протокола IP с проверкой подлинности
+IPBusEnum - Перечислитель IP-шин PnP-X
+KeyIso - Изоляция ключей CNG
+KtmRm - KtmRm для координатора распределенных транзакций
+LanmanServer - Сервер
+LanmanWorkstation - Рабочая станция
+MMCSS - Планировщик классов мультимедиа
+MSDTC - Координатор распределенных транзакций
+MSiSCSI - Служба инициатора Майкрософт iSCSI
+Mcx2Svc - Служба медиаприставки Media Center
+MozillaMaintenance - Mozilla Maintenance Service
+MpsSvc - Брандмауэр Windows
+NetMsmqActivator - Адаптер прослушивателя Net.Msmq
+NetPipeActivator - Адаптер прослушивателя Net.Pipe
+NetTcpActivator - Адаптер прослушивателя Net.Tcp
+NetTcpPortSharing - Служба общего доступа к портам Net.Tcp
+Netlogon - Сетевой вход в систему
+Netman - Сетевые подключения
+NlaSvc - Служба сведений о подключенных сетях
+PNRPAutoReg - Служба публикации имен компьютеров PNRP
+PNRPsvc - Протокол PNRP
+PcaSvc - Служба помощника по совместимости программ
+PeerDistSvc - BranchCache
+PerfHost - Хост библиотеки счетчика производительности
+PlugPlay - Plug-and-Play
+PolicyAgent - Агент политики IPsec
+Power - Питание
+ProfSvc - Служба профилей пользователей
+ProtectedStorage - Защищенное хранилище
+QWAVE - Quality Windows Audio Video Experience
+RAMDrivService - RAMDrivService
+ROMService - LiteManagerTeam LiteManager
+RasAuto - Диспетчер автоматических подключений удаленного доступа
+RasMan - Диспетчер подключений удаленного доступа
+RemoteAccess - Маршрутизация и удаленный доступ
+RemoteRegistry - Удаленный реестр
+RpcEptMapper - Сопоставитель конечных точек RPC
+RpcLocator - Локатор удаленного вызова процедур (RPC)
+RpcSs - Удаленный вызов процедур (RPC)
+SCPolicySvc - Политика удаления смарт-карт
+SCardSvr - Смарт-карта
+SDRSVC - Архивация Windows
+SENS - Служба уведомления о системных событиях
+SNMPTRAP - Ловушка SNMP
+SSDPSRV - Обнаружение SSDP
+SamSs - Диспетчер учетных записей безопасности
+Schedule - Планировщик заданий
+SensrSvc - Адаптивная регулировка яркости
+SessionEnv - Настройка сервера удаленных рабочих столов
+SharedAccess - Общий доступ к подключению к Интернету (ICS)
+ShellHWDetection - Определение оборудования оболочки
+Spooler - Диспетчер печати
+SstpSvc - Служба SSTP
+StorSvc - Служба хранилища
+SysMain - Superfetch
+THREADORDER - Сервер упорядочения потоков
+TabletInputService - Служба ввода планшетного ПК
+TapiSrv - Телефония
+TermService - Службы удаленных рабочих столов
+Themes - Темы
+TrkWks - Клиент отслеживания изменившихся связей
+TrustedInstaller - Установщик модулей Windows
+UI0Detect - Обнаружение интерактивных служб
+UmRdpService - Перенаправитель портов пользовательского режима служб удаленных рабочих столов
+UxSms - Диспетчер сеансов диспетчера окон рабочего стола
+VSS - Теневое копирование тома
+VaultSvc - Диспетчер учетных данных
+W32Time - Служба времени Windows
+WMPNetworkSvc - Служба общих сетевых ресурсов проигрывателя Windows Media
+WPCSvc - Parental Controls
+WPDBusEnum - Служба перечислителя переносных устройств
+WSearch - Windows Search
+WatAdminSvc - Служба технологий активации Windows
+WbioSrvc - Биометрическая служба Windows
+WcsPlugInService - Цветовая система Windows (WCS)
+WdiServiceHost - Узел службы диагностики
+WdiSystemHost - Узел системы диагностики
+WebClient - Веб-клиент
+Wecsvc - Сборщик событий Windows
+WerSvc - Служба регистрации ошибок Windows
+WinDefend - Защитник Windows
+WinHttpAutoProxySvc - Служба автоматического обнаружения веб-прокси WinHTTP
+WinRM - Служба удаленного управления Windows (WS-Management)
+Winmgmt - Инструментарий управления Windows
+Wlansvc - Служба автонастройки WLAN
+WwanSvc - Автонастройка WWAN
+Zabbix Agent - Zabbix Agent
+aspnet_state - Служба состояний ASP.NET
+bthserv - Служба поддержки Bluetooth
+clr_optimization_v2.0.50727_32 - Microsoft .NET Framework NGEN v2.0.50727_X86
+clr_optimization_v2.0.50727_64 - Microsoft .NET Framework NGEN v2.0.50727_X64
+clr_optimization_v4.0.30319_32 - Microsoft .NET Framework NGEN v4.0.30319_X86
+clr_optimization_v4.0.30319_64 - Microsoft .NET Framework NGEN v4.0.30319_X64
+defragsvc - Дефрагментация диска
+dot3svc - Проводная автонастройка
+ehRecvr - Служба ресивера Windows Media Center
+ehSched - Служба планировщика Windows Media Center
+eventlog - Журнал событий Windows
+fdPHost - Хост поставщика функции обнаружения
+gpsvc - Клиент групповой политики
+gupdate - Служба Google Update (gupdate)
+gupdatem - Служба Google Update (gupdatem)
+hasplms - Sentinel LDK License Manager
+hidserv - Доступ к HID-устройствам
+hkmsvc - Управление сертификатами и ключом работоспособности
+idsvc - Windows CardSpace
+iphlpsvc - Вспомогательная служба IP
+lltdsvc - Тополог канального уровня
+lmhosts - Модуль поддержки NetBIOS через TCP/IP
+msiserver - Установщик Windows
+napagent - Агент защиты сетевого доступа
+netprofm - Служба списка сетей
+nsi - Служба интерфейса сохранения сети
+p2pimsvc - Диспетчер удостоверения сетевых участников
+p2psvc - Группировка сетевых участников
+pla - Журналы и оповещения производительности
+seclogon - Вторичный вход в систему
+sppsvc - Защита программного обеспечения
+sppuinotify - Служба уведомления SPP
+stisvc - Служба загрузки изображений Windows (WIA)
+swprv - Программный поставщик теневого копирования (Microsoft)
+upnphost - Узел универсальных PNP-устройств
+vds - Виртуальный диск
+wbengine - Служба модуля архивации на уровне блоков
+wcncsvc - Немедленные подключения Windows - регистратор настройки
+wercplsupport - Поддержка элемента панели управления "Отчеты о проблемах и их решениях"
+wmiApSrv - WMI Performance Adapter
+wscsvc - Центр обеспечения безопасности
+wuauserv - Центр обновления Windows
+wudfsvc - Windows Driver Foundation - User-mode Driver Framework
