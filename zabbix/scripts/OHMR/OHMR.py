@@ -19,6 +19,7 @@ def is_admin():
 #   Начало программы
 ################################################################################
 def main(argv=None):
+
    # Проверяем наличие прав админа.
    if not is_admin ():
       sys.exit ('Not enough permissions to run the script !!!')
