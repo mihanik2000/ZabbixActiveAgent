@@ -68,7 +68,7 @@ print sum1
 # Сохраняем температуру 0-го процессора в файл
 f = open(cpu0,'w')
 try:
-   f.write(sum0)
+   f.write(str(sum0))
 except Exception:
 #      pass
    print 'Бля!'
@@ -78,7 +78,7 @@ finally:
 # Сохраняем температуру 1-го процессора в файл
 f = open(cpu1,'w')
 try:
-   f.write(sum1)
+   f.write(str(sum1))
 except Exception:
 #      pass
    print 'Бля!'
