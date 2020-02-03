@@ -29,6 +29,10 @@ def main(argv=None):
    reload(sys)
    sys.setdefaultencoding('utf8')
 
+   # Устанавливаем имена файлов, где будет храниться температура процесоров
+   cpu0 = r'C:\zabbix\scripts\OHMR\cpu0.txt'
+   cpu1 = r'C:\zabbix\scripts\OHMR\cpu1.txt'
+
    # Получаем результат работы OHMR
    OHMR = []
    OHMR = os.popen("C:\zabbix\scripts\OHMR\OpenHardwareMonitorReport.exe").read().splitlines()
