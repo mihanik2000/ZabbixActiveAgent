@@ -37,13 +37,22 @@ def main(argv=None):
    
    n0 = 0
    sum0 = 0
-   
+
+   n1 = 0
+   sum1 = 0
+
+
    for i in OHMR:
       if (':' in i) and ('(/intelcpu/0/temperature/' in i):
          t = i.split()
          n0 = n0 + 1
          sum0 = sum0 + int(t[8])
-   
+
+      if (':' in i) and ('(/intelcpu/1/temperature/' in i):
+         t = i.split()
+         n1 = n1 + 1
+         sum1 = sum1 + int(t[8])
+
    sum0 = sum0 / n0
    
    print sum0
