@@ -61,9 +61,24 @@ def main(argv=None):
    
    if n1>0:
       sum1 = sum1 / n1
-   
-   print sum0
-   print sum1
+
+ # Сохраняем температуру 0-го процессора в файл
+   f = open( cpu0,'w')
+   try:
+      f.write( sum0 + '\n')
+   except Exception:
+      pass
+   finally:
+      f.close()
+
+ # Сохраняем температуру 1-го процессора в файл
+   f = open( cpu1,'w')
+   try:
+      f.write( sum1 + '\n')
+   except Exception:
+      pass
+   finally:
+      f.close()
 
 if __name__ == "__main__":
     sys.exit(main())
