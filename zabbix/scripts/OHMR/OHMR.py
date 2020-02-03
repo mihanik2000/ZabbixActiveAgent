@@ -55,8 +55,11 @@ def main(argv=None):
 
    sum0 = sum0 / n0
    
+   if n1>0:
+      sum1 = sum1 / n1
+   
    print sum0
-         
+   print sum1
 
 if __name__ == "__main__":
     sys.exit(main())
