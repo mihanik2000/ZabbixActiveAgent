@@ -30,8 +30,8 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 # Устанавливаем имена файлов, где будет храниться температура процесоров
-cpu0 = r'C:\zabbix\scripts\OHMR\cpu0.txt'
-cpu1 = r'C:\zabbix\scripts\OHMR\cpu1.txt'
+cpu0 = 'C:/zabbix/scripts/OHMR/cpu0.txt'
+cpu1 = 'C:/zabbix/scripts/OHMR/cpu1.txt'
 
 # Получаем результат работы OHMR
 OHMR = []
