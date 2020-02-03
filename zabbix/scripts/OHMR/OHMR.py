@@ -21,70 +21,70 @@ def is_admin():
 ################################################################################
 #def main(argv=None):
 
-   # Проверяем наличие прав админа.
-   if not is_admin ():
-      sys.exit ('Not enough permissions to run the script !!!')
-   
-   # Устанавливаем кодировку по умолчанию.
-   reload(sys)
-   sys.setdefaultencoding('utf8')
+# Проверяем наличие прав админа.
+if not is_admin ():
+   sys.exit ('Not enough permissions to run the script !!!')
 
-   # Устанавливаем имена файлов, где будет храниться температура процесоров
-   cpu0 = r'C:\zabbix\scripts\OHMR\cpu0.txt'
-   cpu1 = r'C:\zabbix\scripts\OHMR\cpu1.txt'
+# Устанавливаем кодировку по умолчанию.
+reload(sys)
+sys.setdefaultencoding('utf8')
 
-   # Получаем результат работы OHMR
-   OHMR = []
-   OHMR = os.popen("C:\zabbix\scripts\OHMR\OpenHardwareMonitorReport.exe").read().splitlines()
+# Устанавливаем имена файлов, где будет храниться температура процесоров
+cpu0 = r'C:\zabbix\scripts\OHMR\cpu0.txt'
+cpu1 = r'C:\zabbix\scripts\OHMR\cpu1.txt'
 
-   # Высчитываем температуру 0-го и, возможно, 1-го процесора
-   
-   n0 = 0
-   sum0 = 0
+# Получаем результат работы OHMR
+OHMR = []
+OHMR = os.popen("C:\zabbix\scripts\OHMR\OpenHardwareMonitorReport.exe").read().splitlines()
 
-   n1 = 0
-   sum1 = 0
+# Высчитываем температуру 0-го и, возможно, 1-го процесора
 
-   for i in OHMR:
-      if (':' in i) and ('(/intelcpu/0/temperature/' in i):
-         t = i.split()
-         n0 = n0 + 1
-         sum0 = sum0 + int(t[8])
+n0 = 0
+sum0 = 0
 
-      if (':' in i) and ('(/intelcpu/1/temperature/' in i):
-         t = i.split()
-         n1 = n1 + 1
-         sum1 = sum1 + int(t[8])
+n1 = 0
+sum1 = 0
 
-   if n0>0:
-      sum0 = sum0 / n0
-   
-   if n1>0:
-      sum1 = sum1 / n1
+for i in OHMR:
+   if (':' in i) and ('(/intelcpu/0/temperature/' in i):
+      t = i.split()
+      n0 = n0 + 1
+      sum0 = sum0 + int(t[8])
 
-   print sum0
-   print sum1
+   if (':' in i) and ('(/intelcpu/1/temperature/' in i):
+      t = i.split()
+      n1 = n1 + 1
+      sum1 = sum1 + int(t[8])
 
- # Сохраняем температуру 0-го процессора в файл
-   f = open(cpu0,'w')
-   try:
-      f.write(sum0)
-   except Exception:
+if n0>0:
+   sum0 = sum0 / n0
+
+if n1>0:
+   sum1 = sum1 / n1
+
+print sum0
+print sum1
+
+# Сохраняем температуру 0-го процессора в файл
+f = open(cpu0,'w')
+try:
+   f.write(sum0)
+except Exception:
 #      pass
-      print 'Бля!'
+   print 'Бля!'
 
-   finally:
-      f.close()
+finally:
+   f.close()
 
- # Сохраняем температуру 1-го процессора в файл
-   f = open(cpu1,'w')
-   try:
-      f.write(sum1)
-   except Exception:
+# Сохраняем температуру 1-го процессора в файл
+f = open(cpu1,'w')
+try:
+   f.write(sum1)
+except Exception:
 #      pass
-      print 'Бля!'
-   finally:
-      f.close()
+   print 'Бля!'
+finally:
+   f.close()
 
 #if __name__ == "__main__":
 #    sys.exit(main())
