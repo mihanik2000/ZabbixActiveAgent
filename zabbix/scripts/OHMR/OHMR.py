@@ -29,7 +29,7 @@ def main(argv=None):
    reload(sys)
    sys.setdefaultencoding('utf8')
    
-   # Устанавливаем имена файлов, где будет храниться температура процесоров
+   # Устанавливаем имена файлов, где будет храниться температура процесcоров
    cpu0 = 'C:/zabbix/scripts/OHMR/cpu0.txt'
    cpu1 = 'C:/zabbix/scripts/OHMR/cpu1.txt'
    
