@@ -72,7 +72,6 @@ try:
 except Exception:
 #      pass
    print 'Бля!'
-
 finally:
    f.close()
 
