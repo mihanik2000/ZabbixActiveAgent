@@ -40,8 +40,13 @@ def main(argv=None):
    
    for i in OHMR:
       if (':' in i) and ('(/intelcpu/0/temperature/' in i):
-         tmp = i.split()
-         print tmp
+         t = i.split()
+         n0 = n0 + 1
+         sum0 = sum0 + int(t[8])
+   
+   sum0 = sum0 / n0
+   
+   print sum0
          
 
 if __name__ == "__main__":
