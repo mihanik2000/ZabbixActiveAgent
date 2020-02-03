@@ -33,14 +33,13 @@ def main(argv=None):
    OHMR = []
    OHMR = os.popen("C:\zabbix\scripts\OHMR\OpenHardwareMonitorReport.exe").read().splitlines()
 
-   # Высчитываем температуру 0-го процесора
+   # Высчитываем температуру 0-го и, возможно, 1-го процесора
    
    n0 = 0
    sum0 = 0
 
    n1 = 0
    sum1 = 0
-
 
    for i in OHMR:
       if (':' in i) and ('(/intelcpu/0/temperature/' in i):
@@ -53,7 +52,8 @@ def main(argv=None):
          n1 = n1 + 1
          sum1 = sum1 + int(t[8])
 
-   sum0 = sum0 / n0
+   if n0>0:
+      sum0 = sum0 / n0
    
    if n1>0:
       sum1 = sum1 / n1
