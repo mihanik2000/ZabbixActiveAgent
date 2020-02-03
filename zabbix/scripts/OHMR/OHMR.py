@@ -29,7 +29,10 @@ def main(argv=None):
    reload(sys)
    sys.setdefaultencoding('utf8')
 
-   print os.popen("C:\zabbix\scripts\OHMR\OpenHardwareMonitorReport.exe").read()
+   # Получаем результат работы OHMR
+   OHMR = []
+   OHMR = os.popen("C:\zabbix\scripts\OHMR\OpenHardwareMonitorReport.exe").read().splitlines()
+   print OHMR
 
 
 if __name__ == "__main__":
