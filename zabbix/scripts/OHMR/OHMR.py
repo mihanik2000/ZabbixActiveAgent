@@ -29,7 +29,7 @@ def main(argv=None):
    reload(sys)
    sys.setdefaultencoding('utf8')
 
-   print os.popen("echo Hello World").read()
+   print os.popen("C:\zabbix\scripts\OHMR\OpenHardwareMonitorReport.exe").read()
 
 
 if __name__ == "__main__":
