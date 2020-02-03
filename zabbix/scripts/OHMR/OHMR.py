@@ -70,8 +70,7 @@ def main(argv=None):
    try:
       f.write(str(sum0))
    except Exception:
-   #      pass
-      print 'Бля!'
+      pass
    finally:
       f.close()
    
@@ -80,8 +79,7 @@ def main(argv=None):
    try:
       f.write(str(sum1))
    except Exception:
-   #      pass
-      print 'Бля!'
+      pass
    finally:
       f.close()
 
