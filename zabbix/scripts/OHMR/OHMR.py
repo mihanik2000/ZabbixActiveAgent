@@ -63,18 +63,18 @@ def main(argv=None):
       sum1 = sum1 / n1
 
  # Сохраняем температуру 0-го процессора в файл
-   f = open( cpu0,'w')
+   f = open(cpu0,'w')
    try:
-      f.write( sum0 + '\n')
+      f.write(sum0)
    except Exception:
       pass
    finally:
       f.close()
 
  # Сохраняем температуру 1-го процессора в файл
-   f = open( cpu1,'w')
+   f = open(cpu1,'w')
    try:
-      f.write( sum1 + '\n')
+      f.write(sum1)
    except Exception:
       pass
    finally:
