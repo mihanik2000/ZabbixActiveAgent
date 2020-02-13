@@ -1,0 +1,32 @@
+
+Task                      State      Completion Description
+---------------------------------------------------------------------
+ AVZ_PrivacyCleaner        enabled               
+ AVZ_RunScript             enabled               
+ AVZ_Scan_Vulnerabilities  enabled               
+ AVZ_SecurityTweaker       enabled               
+ AVZ_SystemCleanUp         enabled               
+ Avz_Troubleshoot          enabled               
+ File_Monitoring           running               
+ httpscan                  running               
+ IM_Monitoring             running               
+ KsnqTask                  completed             
+ Mail_Monitoring           running               
+ P2PStorAiTask             completed             
+ PluginActivator           running               
+ PluginSupportServiceTask  running               
+ Protection                running               
+ RollbackPatch             enabled               
+ RollbackUpdate            enabled               
+ Scan_IdleScan             completed             
+ Scan_My_Computer          completed             
+ Scan_Objects              enabled               
+ Scan_Qscan                completed             
+ Scan_Quarantine           enabled               
+ Scan_Startup              enabled               
+ Scan_System_Memory        enabled               
+ Scan_Vulnerabilities      enabled               
+ TrafficProcessingPreloade running               
+ Updater                   completed             
+ Web_Monitoring            running               
+ WebToolBar                enabled               
