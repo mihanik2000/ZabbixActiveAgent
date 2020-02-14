@@ -12,7 +12,7 @@ Form Factor:      2.5 inches
 Device is:        Not in smartctl database [for details use: -P showall]
 ATA Version is:   ATA8-ACS (minor revision not indicated)
 SATA Version is:  SATA 3.1, 6.0 Gb/s (current: 3.0 Gb/s)
-Local Time is:    Fri Feb 14 20:00:00 2020 
+Local Time is:    Fri Feb 14 21:00:00 2020 
 SMART support is: Available - device has SMART capability.
 SMART support is: Enabled
 
@@ -54,14 +54,14 @@ SMART Attributes Data Structure revision number: 16
 Vendor Specific SMART Attributes with Thresholds:
 ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
   1 Raw_Read_Error_Rate     0x000b   100   100   050    Pre-fail  Always       -       0
-  9 Power_On_Hours          0x0012   100   100   000    Old_age   Always       -       7664
+  9 Power_On_Hours          0x0012   100   100   000    Old_age   Always       -       7665
  12 Power_Cycle_Count       0x0012   100   100   000    Old_age   Always       -       1501
 168 Unknown_Attribute       0x0012   100   100   000    Old_age   Always       -       8
 170 Unknown_Attribute       0x0003   100   100   010    Pre-fail  Always       -       162
 173 Unknown_Attribute       0x0012   100   100   000    Old_age   Always       -       10354940
 192 Power-Off_Retract_Count 0x0012   100   100   000    Old_age   Always       -       59
 218 Unknown_Attribute       0x000b   100   100   050    Pre-fail  Always       -       0
-241 Total_LBAs_Written      0x0012   100   100   000    Old_age   Always       -       7351
+241 Total_LBAs_Written      0x0012   100   100   000    Old_age   Always       -       7352
 
 SMART Error Log Version: 1
 No Errors Logged
