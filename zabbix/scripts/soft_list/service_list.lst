@@ -118,8 +118,6 @@ Wlansvc - Служба автонастройки WLAN
 WwanSvc - Автонастройка WWAN
 Zabbix Agent - Zabbix Agent
 aspnet_state - Служба состояний ASP.NET
-aswbIDSAgent - aswbIDSAgent
-avast! Antivirus - Avast Antivirus
 bthserv - Служба поддержки Bluetooth
 clr_optimization_v2.0.50727_32 - Microsoft .NET Framework NGEN v2.0.50727_X86
 clr_optimization_v2.0.50727_64 - Microsoft .NET Framework NGEN v2.0.50727_X64
