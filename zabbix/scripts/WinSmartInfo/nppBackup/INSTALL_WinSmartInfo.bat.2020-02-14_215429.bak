@@ -27,7 +27,7 @@ IF NOT %HasAdminRights%==1 (
 
 :SKIPADMIN
 
-Start /wait C:\zabbix\scripts\WinSmartInfo\smartmontools-7.1-1.win32-setup /S
+Start /wait C:\zabbix\scripts\WinSmartInfo\smartmontools-6.6-1.win32-setup.exe /S
 
 rem Получаем версию ОС
 rem Windows XP ?
