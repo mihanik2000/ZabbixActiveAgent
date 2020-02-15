@@ -45,7 +45,8 @@ def main(argv=None):
    
    MyList = get_stdout('smartctl.exe --scan')
 
-   print MyList
+   for MyLine in MyList:
+      print MyLine
 
 if __name__ == "__main__":
     sys.exit(main())
