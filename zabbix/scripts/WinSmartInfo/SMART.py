@@ -56,6 +56,18 @@ def smart_is_on(MyDisk):
    else:
       return 1
 
+#
+# Функция проверки включен ли SMART у диска
+# Вход: имя диска в виде /dev/sdX
+# Выход: 0 - SMART включен успено, 1 - при включении SMART произошли ошибки
+#
+def smart_on(MyDisk):
+   MyRes = get_stdout ('smartctl --smart=on --offlineauto=on --saveauto=on' + MyDisk)
+   if 'SMART Enabled' in MyRes:
+      return 0
+   else:
+      return 1
+
 ################################################################################
 #   Начало программы
 ################################################################################
