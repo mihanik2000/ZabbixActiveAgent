@@ -21,7 +21,7 @@ def is_admin():
 # Вход: командная строка
 # Выход: список строк из STDOUT
 #
-def get_stdout( MyCmdLine )
+def get_stdout( MyCmdLine ):
    MySTDOUT=[]
    try:
       MySTDOUT = os.popen(MyCmdLine).read().splitlines()
@@ -43,7 +43,7 @@ def main(argv=None):
    reload(sys)
    sys.setdefaultencoding('utf8')
    
-   MyList = get_stdout ('smartctl.exe --scan')
+   MyList = get_stdout('smartctl.exe --scan')
 
    print MyList
 
