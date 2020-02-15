@@ -65,5 +65,7 @@ def main(argv=None):
    for MyLine in MyFullAtaList:
       print MyLine
 
+    get_sdx_list (MyFullAtaList)
+
 if __name__ == "__main__":
     sys.exit(main())
