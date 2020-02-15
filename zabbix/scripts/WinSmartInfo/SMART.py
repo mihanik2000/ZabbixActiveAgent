@@ -57,12 +57,10 @@ def main(argv=None):
    reload(sys)
    sys.setdefaultencoding('utf8')
    
-   # Получаем список дисковых устройств
+   # Получаем список всех дисковых устройств
    MyFullAtaList = get_stdout('smartctl.exe --scan')
 
-   for MyLine in MyFullAtaList:
-      print MyLine
-      
+   # Получаем список устройств sdX
    MySDXList = get_sdx_list(MyFullAtaList)
    
    for MyLine in MySDXList:
