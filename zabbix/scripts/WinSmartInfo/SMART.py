@@ -39,8 +39,7 @@ def in_list(MyStr, MyList):
    for Line in MyList:
       if MyStr in Line:
          return 1
-      else:
-         return 0
+   return 0
 
 #
 # Функция получения списка устройств /dev/sdХ
