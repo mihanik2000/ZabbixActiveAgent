@@ -44,6 +44,7 @@ def main(argv=None):
    sys.setdefaultencoding('utf8')
    
    MyList = get_stdout ('smartctl.exe --scan')
+
    print MyList
 
 if __name__ == "__main__":
