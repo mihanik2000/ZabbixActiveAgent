@@ -35,14 +35,16 @@ def get_stdout( MyCmdLine ):
 # Вход: список строк из STDOUT smartctl
 # Выход: список устройств /dev/sdХ
 #
-def get_stdout( MyCmdLine ):
-   MySTDOUT=[]
-   try:
-      MySTDOUT = os.popen(MyCmdLine).read().splitlines()
-   except Exception:
-      pass
-   finally:
-      return MySTDOUT
+def get_sdx_list( MyFullList ):
+   MyList=[]
+
+   for MyLine in MyFullList:
+      if ('/dev/sd' in MyLine) and (' -d sat #' in MyLine):
+         MySplitLine = MyLine.split()
+         for i in MySplitLine:
+            print i
+
+   return MyList
 
 ################################################################################
 #   Начало программы
