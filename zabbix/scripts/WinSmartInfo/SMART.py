@@ -44,6 +44,18 @@ def get_sdx_list( MyFullList ):
 
    return MyList
 
+#
+# Функция проверки включен ли SMART у диска
+# Вход: имя диска в виде /dev/sdX
+# Выход: 1 - SMART включен, 0 - SMART выключен
+#
+def smart_is_on(MyDisk):
+   MyRes = get_stdout ('smartctl -i ' + MyDisk)
+   if 'SMART support is: Disabled' in MyRes:
+      return 0
+   else:
+      return 1
+
 ################################################################################
 #   Начало программы
 ################################################################################
@@ -65,6 +77,7 @@ def main(argv=None):
    
    for MyLine in MySDXList:
       print MyLine
+      print smart_is_on(MyLine)
 
 if __name__ == "__main__":
     sys.exit(main())
