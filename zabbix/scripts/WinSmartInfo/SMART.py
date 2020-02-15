@@ -82,6 +82,9 @@ def main(argv=None):
    sys.setdefaultencoding('utf8')
    
    # Получаем список всех дисковых устройств
+   # Замечание!
+   # Получаем весь список устройств, но в дальнейшем будем использовать только SATA
+   # Это на будущее ;-)
    MyFullAtaList = get_stdout('smartctl.exe --scan')
 
    # Получаем список устройств /dev/sdX
