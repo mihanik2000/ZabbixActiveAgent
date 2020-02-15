@@ -92,5 +92,9 @@ def main(argv=None):
       if smart_is_on(MysdX)==0 :
          smart_on(MysdX)
 
+   # Получаем SMART для каждого устройства sdX и записываем в файлы
+   for MysdX in MySDXList:
+      print MysdX
+      
 if __name__ == "__main__":
     sys.exit(main())
