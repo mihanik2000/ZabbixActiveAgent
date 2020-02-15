@@ -39,7 +39,6 @@ def in_list(MyStr, MyList):
    for Line in MyList:
       if MyStr in Line:
          return 1
-
    return 0
 
 #
