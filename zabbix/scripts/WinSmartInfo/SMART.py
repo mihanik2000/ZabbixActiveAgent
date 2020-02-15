@@ -30,6 +30,20 @@ def get_stdout( MyCmdLine ):
    finally:
       return MySTDOUT
 
+#
+# Функция получения списка устройств /dev/sdХ
+# Вход: список строк из STDOUT smartctl
+# Выход: список устройств /dev/sdХ
+#
+def get_stdout( MyCmdLine ):
+   MySTDOUT=[]
+   try:
+      MySTDOUT = os.popen(MyCmdLine).read().splitlines()
+   except Exception:
+      pass
+   finally:
+      return MySTDOUT
+
 ################################################################################
 #   Начало программы
 ################################################################################
@@ -44,9 +58,9 @@ def main(argv=None):
    sys.setdefaultencoding('utf8')
    
    # Получаем список дисковых устройств
-   MyFulList = get_stdout('smartctl.exe --scan')
+   MyFullAtaList = get_stdout('smartctl.exe --scan')
 
-   for MyLine in MyFulList:
+   for MyLine in MyFullAtaList:
       print MyLine
 
 if __name__ == "__main__":
