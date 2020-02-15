@@ -87,12 +87,10 @@ def main(argv=None):
    # Получаем список устройств sdX
    MySDXList = get_sdx_list(MyFullAtaList)
    
+   # Если у какого-то из устройств SMART отключен, включаем.
    for MyLine in MySDXList:
-      print MyLine
-      print smart_is_on(MyLine)
       if smart_is_on(MyLine)==0 :
          smart_on(MyLine)
-      print smart_is_on(MyLine)
 
 if __name__ == "__main__":
     sys.exit(main())
