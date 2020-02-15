@@ -96,7 +96,7 @@ def main(argv=None):
    for MysdX in MySDXList:
       print MysdX
       print MysdX.split('/')[2]
-      #get_stdout ( r'smartctl.exe -s on -T permissive --all ' + MysdX + r' > C:\zabbix\scripts\WinSmartInfo\WinSmart' + MysdX.split('/')[2] + r'.txt')
+      get_stdout ( r'smartctl.exe -s on -T permissive --all ' + MysdX + r' > C:\zabbix\scripts\WinSmartInfo\WinSmart' + MysdX.split('/')[2] + r'.txt')
       
 if __name__ == "__main__":
     sys.exit(main())
