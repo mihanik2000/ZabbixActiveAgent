@@ -43,9 +43,10 @@ def main(argv=None):
    reload(sys)
    sys.setdefaultencoding('utf8')
    
-   MyList = get_stdout('smartctl.exe --scan')
+   # Получаем список дисковых устройств
+   MyFulList = get_stdout('smartctl.exe --scan')
 
-   for MyLine in MyList:
+   for MyLine in MyFulList:
       print MyLine
 
 if __name__ == "__main__":
