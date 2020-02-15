@@ -66,7 +66,7 @@ def main(argv=None):
    MySDXList = get_sdx_list(MyFullAtaList)
    
    for MyLine in MySDXList:
-      print MyLin
+      print MyLine
 
 if __name__ == "__main__":
     sys.exit(main())
