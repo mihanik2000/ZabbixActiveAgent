@@ -40,9 +40,7 @@ def get_sdx_list( MyFullList ):
 
    for MyLine in MyFullList:
       if ('/dev/sd' in MyLine) and (' -d sat #' in MyLine):
-         MySplitLine = MyLine.split()
-         for i in MySplitLine:
-            print i
+         MyList.append = MyLine.split()[0]
 
    return MyList
 
@@ -66,6 +64,9 @@ def main(argv=None):
       print MyLine
       
    MySDXList = get_sdx_list(MyFullAtaList)
+   
+   for MyLine in MySDXList:
+      print MyLin
 
 if __name__ == "__main__":
     sys.exit(main())
