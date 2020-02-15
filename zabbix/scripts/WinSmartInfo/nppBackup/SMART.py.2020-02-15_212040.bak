@@ -95,7 +95,7 @@ def main(argv=None):
       if smart_is_on(MysdX)==0 :
          smart_on(MysdX)
 
-   # Получаем SMART для каждого устройства /dev/sdX и записываем в файлы
+   # Получаем SMART для каждого устройства sdX и записываем в файлы
    for MysdX in MySDXList:
       get_stdout ( r'smartctl.exe -s on -T permissive --all ' + MysdX + r' > C:\zabbix\scripts\WinSmartInfo\WinSmart_' + MysdX.split('/')[2] + r'.txt')
       
