@@ -36,7 +36,6 @@ def get_stdout( MyCmdLine ):
 # Выход: 0 - подстрока не встречается в списке, 1 - подстрока есть в списке
 #
 def in_list(MyStr, MyList):
-
    for Line in MyList:
       if MyStr in Line:
          return 1
