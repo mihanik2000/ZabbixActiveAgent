@@ -84,13 +84,13 @@ def main(argv=None):
    # Получаем список всех дисковых устройств
    MyFullAtaList = get_stdout('smartctl.exe --scan')
 
-   # Получаем список устройств sdX
+   # Получаем список устройств /dev/sdX
    MySDXList = get_sdx_list(MyFullAtaList)
    
    # Если у какого-то из устройств SMART отключен, включаем.
-   for MyLine in MySDXList:
-      if smart_is_on(MyLine)==0 :
-         smart_on(MyLine)
+   for MysdX in MySDXList:
+      if smart_is_on(MysdX)==0 :
+         smart_on(MysdX)
 
 if __name__ == "__main__":
     sys.exit(main())
