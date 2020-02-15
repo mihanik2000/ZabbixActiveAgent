@@ -90,7 +90,7 @@ def main(argv=None):
    for MyLine in MySDXList:
       print MyLine
       print smart_is_on(MyLine)
-      if smart_is_on(MyLine)=0:
+      if smart_is_on(MyLine)==0 :
          smart_on(MyLine)
       print smart_is_on(MyLine)
 
