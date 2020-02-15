@@ -31,6 +31,18 @@ def get_stdout( MyCmdLine ):
       return MySTDOUT
 
 #
+# Функция проверки наличия подстроки в любой строке из списка
+# Вход: подстрока, список
+# Выход: 0 - подстрока не встречается в списке, 1 - подстрока есть в списке
+#
+def in_list(MyStr, MyList):
+   for Line in MyList:
+      if MyStr in Line:
+         return 1
+      else:
+         return 0
+
+#
 # Функция получения списка устройств /dev/sdХ
 # Вход: список строк из STDOUT smartctl
 # Выход: список устройств /dev/sdХ
@@ -51,7 +63,7 @@ def get_sdx_list( MyFullList ):
 #
 def smart_is_on(MyDisk):
    MyRes = get_stdout ('smartctl -i ' + MyDisk)
-   if 'SMART support is: Disabled' in MyRes:
+   if in_list('SMART support is: Disabled',MyRes)==1:
       return 0
    else:
       return 1
@@ -63,7 +75,7 @@ def smart_is_on(MyDisk):
 #
 def smart_on(MyDisk):
    MyRes = get_stdout ('smartctl --smart=on --offlineauto=on --saveauto=on ' + MyDisk)
-   if 'SMART Enabled' in MyRes:
+   if in_list('SMART Enabled',MyRes)==1:
       return 0
    else:
       return 1
