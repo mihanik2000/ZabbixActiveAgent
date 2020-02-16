@@ -13,7 +13,7 @@ Form Factor:      2.5 inches
 Device is:        In smartctl database [for details use: -P show]
 ATA Version is:   ATA8-ACS (minor revision not indicated)
 SATA Version is:  SATA 3.1, 6.0 Gb/s (current: 3.0 Gb/s)
-Local Time is:    Sun Feb 16 09:33:44 2020 
+Local Time is:    Sun Feb 16 09:34:16 2020 
 SMART support is: Available - device has SMART capability.
 SMART support is: Enabled
 
