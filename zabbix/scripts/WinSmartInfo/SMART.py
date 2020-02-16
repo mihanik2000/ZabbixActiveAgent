@@ -115,7 +115,7 @@ def main(argv=None):
    t.append('7654321')
    t.append('098765')
    
-   print in_list('098v ',t)
+   print in_list('43',t)
    
    
 if __name__ == "__main__":
