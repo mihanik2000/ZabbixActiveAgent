@@ -45,7 +45,7 @@ netsh firewall set portopening tcp 10050 zabbix_in enable
 If Exist "C:\Program Files (x86)" (
 	copy /y C:\zabbix\bin\win64\*.exe C:\zabbix\
 	)
-else (
+else(
 	copy /y C:\zabbix\bin\win32\*.exe C:\zabbix\
 )
 
