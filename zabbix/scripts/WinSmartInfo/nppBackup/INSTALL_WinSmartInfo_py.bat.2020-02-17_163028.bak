@@ -42,7 +42,7 @@ If %errorlevel%==0  (
 	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC DAILY /ST 00:00 /RI 60 /DU 24:00 /TN "WinSmartInfo" /TR "C:\Python27\python.exe \"C:\zabbix\scripts\WinSmartInfo\SMART.py\"" /RL HIGHEST /F
  )
 
-C:\Python27\python.exe C:\zabbix\scripts\WinSmartInfo\SMART.py
+python C:\zabbix\scripts\WinSmartInfo\SMART.py
 
 :END
 
