@@ -29,9 +29,9 @@ IF NOT %HasAdminRights%==1 (
 :SKIPADMIN
 
 If exist "%programfiles(x86)%" (
-		echo start /wait %~dp0python-2.7.17.amd64.msi  /passive /norestart ALLUSERS=1 ADDLOCAL=ALL
+		start /wait msiexec.exe /passive /i "%~dp0python-2.7.17.amd64.msi" /norestart ALLUSERS=1 ADDLOCAL=ALL
 	) else (
-		echo start /wait %~dp0python-2.7.17.msi /passive /norestart ALLUSERS=1 ADDLOCAL=ALL
+		start /wait msiexec.exe /passive /i "%~dp0python-2.7.17.msi" /norestart ALLUSERS=1 ADDLOCAL=ALL
 	)
 
 rem Ассоциируем файлы .py с интерпретатором Python и настраиваем PATH
