@@ -42,7 +42,7 @@ If %errorlevel%==0  (
 
 cd "C:\Zabbix\scripts\soft_list"
 
-C:\Python27\python.exe "C:\zabbix\scripts\soft_list\programmlist.py"
+python "C:\zabbix\scripts\soft_list\programmlist.py"
 
 :END
 
