@@ -34,6 +34,9 @@ If exist "%programfiles(x86)%" (
 		echo start /wait %~dp0python-2.7.17.msi /passive /norestart ALLUSERS=1 ADDLOCAL=ALL
 	)
 
+exit /b
+
+
 rem Ассоциируем файлы .py с интерпретатором Python и настраиваем PATH
 setx PATH "C:\Python27\;C:\Python27\Scripts;%Path%"
 assoc .py=Python.File
