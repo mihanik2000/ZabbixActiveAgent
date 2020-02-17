@@ -34,15 +34,15 @@ ver | find "5.1."
 
 If %errorlevel%==0  (
 rem Windows XP
-	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC HOURLY /ST 00:00:00 /TN "OHMR0" /TR "python \"C:\zabbix\scripts\OHMR\OHMR.py\""
-	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC HOURLY /ST 00:10:00 /TN "OHMR1" /TR "python \"C:\zabbix\scripts\OHMR\OHMR.py\""
-	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC HOURLY /ST 00:20:00 /TN "OHMR2" /TR "python \"C:\zabbix\scripts\OHMR\OHMR.py\""
-	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC HOURLY /ST 00:30:00 /TN "OHMR3" /TR "python \"C:\zabbix\scripts\OHMR\OHMR.py\""
-	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC HOURLY /ST 00:40:00 /TN "OHMR4" /TR "python \"C:\zabbix\scripts\OHMR\OHMR.py\""
-	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC HOURLY /ST 00:50:00 /TN "OHMR5" /TR "python \"C:\zabbix\scripts\OHMR\OHMR.py\""
+	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC HOURLY /ST 00:00:00 /TN "OHMR0" /TR "C:\Python27\python.exe \"C:\zabbix\scripts\OHMR\OHMR.py\""
+	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC HOURLY /ST 00:10:00 /TN "OHMR1" /TR "C:\Python27\python.exe \"C:\zabbix\scripts\OHMR\OHMR.py\""
+	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC HOURLY /ST 00:20:00 /TN "OHMR2" /TR "C:\Python27\python.exe \"C:\zabbix\scripts\OHMR\OHMR.py\""
+	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC HOURLY /ST 00:30:00 /TN "OHMR3" /TR "C:\Python27\python.exe \"C:\zabbix\scripts\OHMR\OHMR.py\""
+	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC HOURLY /ST 00:40:00 /TN "OHMR4" /TR "C:\Python27\python.exe \"C:\zabbix\scripts\OHMR\OHMR.py\""
+	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC HOURLY /ST 00:50:00 /TN "OHMR5" /TR "C:\Python27\python.exe \"C:\zabbix\scripts\OHMR\OHMR.py\""
  ) else (
 rem НЕ Windows XP
-	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC DAILY /ST 00:00 /RI 10 /DU 24:00 /TN "OHMR" /TR "python \"C:\zabbix\scripts\OHMR\OHMR.py\"" /RL HIGHEST /F
+	SCHTASKS /Create /RU "NT AUTHORITY\SYSTEM" /SC DAILY /ST 00:00 /RI 10 /DU 24:00 /TN "OHMR" /TR "C:\Python27\python.exe \"C:\zabbix\scripts\OHMR\OHMR.py\"" /RL HIGHEST /F
  )
 
 del /f /q C:\zabbix\scripts\OHMR\cpu0.txt
