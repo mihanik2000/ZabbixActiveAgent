@@ -48,7 +48,7 @@ rem НЕ Windows XP
 del /f /q C:\zabbix\scripts\OHMR\cpu0.txt
 del /f /q C:\zabbix\scripts\OHMR\cpu1.txt
 
-C:\Python27\python.exe C:\zabbix\scripts\OHMR\OHMR.py
+python C:\zabbix\scripts\OHMR\OHMR.py
 
 :END
 
