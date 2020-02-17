@@ -29,9 +29,9 @@ IF NOT %HasAdminRights%==1 (
 :SKIPADMIN
 
 If exist "%programfiles(x86)%" (
-		echo start /wait %~dp0python-2.7.17.amd64.msi  /passive /norestart ALLUSERS=1 ADDLOCAL=ALL
+		echo start /wait %~dp0\python-2.7.17.amd64.msi  /passive /norestart ALLUSERS=1 ADDLOCAL=ALL
 	) else (
-		echo start /wait %~dp0python-2.7.17.msi /passive /norestart ALLUSERS=1 ADDLOCAL=ALL
+		echo start /wait %~dp0\python-2.7.17.msi /passive /norestart ALLUSERS=1 ADDLOCAL=ALL
 	)
 
 exit /b
