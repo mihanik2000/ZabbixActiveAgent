@@ -50,8 +50,8 @@ def get_sdx_list( MyFullList ):
    MyList=[]
 
    for MyLine in MyFullList:
-      if ('/dev/sd' in MyLine) and (' -d sat #' in MyLine):
-         MyList.append(MyLine.split()[0])
+       if ('/dev/sd' in MyLine) and ((' -d sat #' in MyLine) or (' -d ata #' in MyLine)):
+           MyList.append(MyLine.split()[0])
 
    return MyList
 
