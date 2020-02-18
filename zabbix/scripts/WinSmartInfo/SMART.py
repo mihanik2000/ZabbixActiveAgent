@@ -50,8 +50,8 @@ def get_sdx_list( MyFullList ):
    MyList=[]
 
    for MyLine in MyFullList:
-       if ('/dev/sd' in MyLine) and ((' -d sat #' in MyLine) or (' -d ata #' in MyLine)):
-           MyList.append(MyLine.split()[0])
+      if ('/dev/sd' in MyLine) and ((' -d sat #' in MyLine) or (' -d ata #' in MyLine)):
+         MyList.append(MyLine.split()[0])
 
    return MyList
 
@@ -100,7 +100,7 @@ def main(argv=None):
 
 	# Получаем список устройств /dev/sdX
 	MySDXList = get_sdx_list(MyFullAtaList)
-
+	
 	# Если у какого-то из устройств SMART отключен, включаем.
 	for MysdX in MySDXList:
 	  if smart_is_on(MysdX)==0 :
