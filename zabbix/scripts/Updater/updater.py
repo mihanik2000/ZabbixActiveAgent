@@ -59,7 +59,7 @@ def ListToFile ( InboundList, InboundFileName ):
        MyResult = True
    finally:
       f.close()
-    
+
    return MyResult
 
 # 
@@ -72,5 +72,6 @@ def DeleteDuplicates ( InboundList ):
     for i in InboundList:
         if i not in OutboundList:
             OutboundList.append(i)
+
     return OutboundList
 
