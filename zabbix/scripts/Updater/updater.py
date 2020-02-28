@@ -95,7 +95,7 @@ def get_stdout( MyCmdLine ):
 # Вход: подстрока, список
 # Выход: false - подстрока не встречается в списке, true - подстрока есть в списке
 #
-def in_list(MyStr, MyList):
+def InList(MyStr, MyList):
     for Line in MyList:
         if MyStr in Line:
             return True
