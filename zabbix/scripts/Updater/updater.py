@@ -46,12 +46,12 @@ def FileToList ( InboundFileName ):
 # Вход: список, путь к файлу
 # Выход: true - успешная запись, false - ошибка при записи
 #
-def ListToFile ( OutboundList, OutboundFileName ):
+def ListToFile ( InboundList, InboundFileName ):
     
     # Записываем файл построчно
    f = open( OutboundFileName,'w')
    try:
-     for line in OutboundList:
+     for line in InboundList:
            f.write(line + '\n')
    except Exception:
        MyResult = False
@@ -61,3 +61,4 @@ def ListToFile ( OutboundList, OutboundFileName ):
       f.close()
     
    return MyResult
+
