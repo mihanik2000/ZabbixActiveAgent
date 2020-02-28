@@ -62,3 +62,15 @@ def ListToFile ( InboundList, InboundFileName ):
     
    return MyResult
 
+# 
+# Функция удаления дубликатов из списка
+# Вход: список
+# Выход: список без дубликатов
+#
+def DuplicateRemoval ( InboundList ):
+    OutboundList = []
+    for i in InboundList:
+        if i not in OutboundList:
+            OutboundList.append(i)
+    return OutboundList
+
