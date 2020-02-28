@@ -2,6 +2,7 @@
 
 import ctypes
 import os
+import sys
 
 #
 # Функция проверки наличия прав администратора
@@ -74,4 +75,18 @@ def DeleteDuplicates ( InboundList ):
             OutboundList.append(i)
 
     return OutboundList
+
+#
+# Функция получения STDOUT команды DOS
+# Вход: командная строка
+# Выход: список строк из STDOUT
+#
+def get_stdout( MyCmdLine ):
+    MySTDOUT=[]
+    try:
+        MySTDOUT = os.popen(MyCmdLine).read().splitlines()
+    except Exception:
+        pass
+    finally:
+        return MySTDOUT
 
