@@ -1,9 +1,0 @@
-@echo off
-
-cd "c:\Program Files\Kaspersky Lab"
-dir /b > C:\zabbix\scripts\Kaspersky\kavpath.txt
-set /p KavPath=< C:\zabbix\scripts\Kaspersky\kavpath.txt
-cd %KavPath%
-
-avp.com status > C:\zabbix\scripts\Kaspersky\KasperskyStatus.txt
-avp.com report /R:C:\zabbix\scripts\Kaspersky\KasperskyReport.txt
