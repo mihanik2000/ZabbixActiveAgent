@@ -90,3 +90,14 @@ def get_stdout( MyCmdLine ):
     finally:
         return MySTDOUT
 
+#
+# Функция проверки наличия подстроки в любой из строк списка
+# Вход: подстрока, список
+# Выход: false - подстрока не встречается в списке, true - подстрока есть в списке
+#
+def in_list(MyStr, MyList):
+    for Line in MyList:
+        if MyStr in Line:
+            return True
+        
+    return False
