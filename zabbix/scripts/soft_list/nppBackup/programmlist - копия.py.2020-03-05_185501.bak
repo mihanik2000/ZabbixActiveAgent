@@ -118,10 +118,7 @@ def ProgramList():
                    skey_name = _winreg.EnumKey(key, i)
                    skey = _winreg.OpenKey(key, skey_name)
                    try:
-					   MyDisplayName =  _winreg.QueryValueEx(skey, 'DisplayName')[0]
-					   MyComments =  _winreg.QueryValueEx(skey, 'Comments')[0]
-					   MyUninstallString = _winreg.QueryValueEx(skey, 'UninstallString')[0]
-                       List.append ( MyDisplayName + ' - ' + MyComments + ' - ' + MyUninstallString )
+                       List.append ( _winreg.QueryValueEx(skey, 'DisplayName')[0] )
                    except OSError as e:
                        if e.errno == errno.ENOENT:
                            # DisplayName не существует в этом разделе
