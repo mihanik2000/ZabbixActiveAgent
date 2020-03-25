@@ -13,6 +13,7 @@ BITS - Фоновая интеллектуальная служба переда
 Browser - Браузер компьютеров
 COMSysApp - Системное приложение COM+
 CertPropSvc - Распространение сертификата
+CmdAgent - COMODO Internet Security Helper Service
 CryptSvc - Службы криптографии
 CscService - Автономные файлы
 DPS - Служба политики диагностики
@@ -33,6 +34,8 @@ HomeGroupProvider - Поставщик домашней группы
 IEEtwCollectorService - Internet Explorer ETW Collector Service
 IKEEXT - Модули ключей IPsec для обмена ключами в Интернете и протокола IP с проверкой подлинности
 IPBusEnum - Перечислитель IP-шин PnP-X
+ITSMService - ITSMService
+ItsmRsp - ItsmRsp
 KeyIso - Изоляция ключей CNG
 KtmRm - KtmRm для координатора распределенных транзакций
 LanmanServer - Сервер
@@ -67,6 +70,7 @@ RasAuto - Диспетчер автоматических подключений
 RasMan - Диспетчер подключений удаленного доступа
 RemoteAccess - Маршрутизация и удаленный доступ
 RemoteRegistry - Удаленный реестр
+RmmService - RmmService
 RpcEptMapper - Сопоставитель конечных точек RPC
 RpcLocator - Локатор удаленного вызова процедур (RPC)
 RpcSs - Удаленный вызов процедур (RPC)
@@ -123,6 +127,7 @@ clr_optimization_v2.0.50727_32 - Microsoft .NET Framework NGEN v2.0.50727_X86
 clr_optimization_v2.0.50727_64 - Microsoft .NET Framework NGEN v2.0.50727_X64
 clr_optimization_v4.0.30319_32 - Microsoft .NET Framework NGEN v4.0.30319_X86
 clr_optimization_v4.0.30319_64 - Microsoft .NET Framework NGEN v4.0.30319_X64
+cmdvirth - COMODO Virtual Service Manager
 defragsvc - Дефрагментация диска
 dot3svc - Проводная автонастройка
 ehRecvr - Служба ресивера Windows Media Center
