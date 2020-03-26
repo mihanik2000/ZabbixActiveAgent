@@ -13,7 +13,6 @@ BITS - Фоновая интеллектуальная служба переда
 Browser - Браузер компьютеров
 COMSysApp - Системное приложение COM+
 CertPropSvc - Распространение сертификата
-CmdAgent - COMODO Internet Security Helper Service
 CryptSvc - Службы криптографии
 CscService - Автономные файлы
 DPS - Служба политики диагностики
@@ -127,7 +126,6 @@ clr_optimization_v2.0.50727_32 - Microsoft .NET Framework NGEN v2.0.50727_X86
 clr_optimization_v2.0.50727_64 - Microsoft .NET Framework NGEN v2.0.50727_X64
 clr_optimization_v4.0.30319_32 - Microsoft .NET Framework NGEN v4.0.30319_X86
 clr_optimization_v4.0.30319_64 - Microsoft .NET Framework NGEN v4.0.30319_X64
-cmdvirth - COMODO Virtual Service Manager
 defragsvc - Дефрагментация диска
 dot3svc - Проводная автонастройка
 ehRecvr - Служба ресивера Windows Media Center
