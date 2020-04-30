@@ -18,7 +18,6 @@ CscService - Автономные файлы
 DPS - Служба политики диагностики
 DcomLaunch - Модуль запуска процессов DCOM-сервера
 Dhcp - DHCP-клиент
-DiagTrack - Diagnostics Tracking Service
 Dnscache - DNS-клиент
 EFS - Шифрованная файловая система (EFS)
 EapHost - Расширяемый протокол проверки подлинности (EAP)
