@@ -32,8 +32,6 @@ HomeGroupProvider - Поставщик домашней группы
 IEEtwCollectorService - Internet Explorer ETW Collector Service
 IKEEXT - Модули ключей IPsec для обмена ключами в Интернете и протокола IP с проверкой подлинности
 IPBusEnum - Перечислитель IP-шин PnP-X
-ITSMService - ITSMService
-ItsmRsp - ItsmRsp
 KeyIso - Изоляция ключей CNG
 KtmRm - KtmRm для координатора распределенных транзакций
 LanmanServer - Сервер
@@ -68,7 +66,6 @@ RasAuto - Диспетчер автоматических подключений
 RasMan - Диспетчер подключений удаленного доступа
 RemoteAccess - Маршрутизация и удаленный доступ
 RemoteRegistry - Удаленный реестр
-RmmService - RmmService
 RpcEptMapper - Сопоставитель конечных точек RPC
 RpcLocator - Локатор удаленного вызова процедур (RPC)
 RpcSs - Удаленный вызов процедур (RPC)
