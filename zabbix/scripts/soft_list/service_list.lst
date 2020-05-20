@@ -1,4 +1,5 @@
 ALG - Служба шлюза уровня приложения
+AVP20.0 - Kaspersky Anti-Virus Service 20.0
 AdobeFlashPlayerUpdateSvc - Adobe Flash Player Update Service
 AeLookupSvc - Информация о совместимости приложений
 AppIDSvc - Удостоверение приложения
@@ -32,6 +33,7 @@ HomeGroupProvider - Поставщик домашней группы
 IEEtwCollectorService - Internet Explorer ETW Collector Service
 IKEEXT - Модули ключей IPsec для обмена ключами в Интернете и протокола IP с проверкой подлинности
 IPBusEnum - Перечислитель IP-шин PnP-X
+KSDE4.0 - Kaspersky Secure Connection Service 4.0
 KeyIso - Изоляция ключей CNG
 KtmRm - KtmRm для координатора распределенных транзакций
 LanmanServer - Сервер
@@ -136,6 +138,7 @@ hidserv - Доступ к HID-устройствам
 hkmsvc - Управление сертификатами и ключом работоспособности
 idsvc - Windows CardSpace
 iphlpsvc - Вспомогательная служба IP
+klvssbridge64_20.0 - Kaspersky Volume Shadow Copy Service Bridge 20.0
 lltdsvc - Тополог канального уровня
 lmhosts - Модуль поддержки NetBIOS через TCP/IP
 msiserver - Установщик Windows
