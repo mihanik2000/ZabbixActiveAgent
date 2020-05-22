@@ -33,7 +33,6 @@ HomeGroupProvider - Поставщик домашней группы
 IEEtwCollectorService - Internet Explorer ETW Collector Service
 IKEEXT - Модули ключей IPsec для обмена ключами в Интернете и протокола IP с проверкой подлинности
 IPBusEnum - Перечислитель IP-шин PnP-X
-KSDE4.0 - Kaspersky Secure Connection Service 4.0
 KeyIso - Изоляция ключей CNG
 KtmRm - KtmRm для координатора распределенных транзакций
 LanmanServer - Сервер

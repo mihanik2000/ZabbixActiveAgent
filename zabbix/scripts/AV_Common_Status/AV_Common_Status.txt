@@ -4,6 +4,6 @@ displayName=Kaspersky Free
 instanceGuid={0AB30972-4BAC-7BEE-CBCA-B8F9E68797D8}
 pathToSignedProductExe=C:\Program Files (x86)\Kaspersky Lab\Kaspersky Free 20.0\wmiav.exe
 pathToSignedReportingExe=C:\Program Files (x86)\Kaspersky Lab\Kaspersky Free 20.0\avp.exe
-productState=266240
+productState=270336
 
 
