@@ -27,6 +27,7 @@ FDResPub - Публикация ресурсов обнаружения функ
 Fax - Факс
 FontCache - Служба кэша шрифтов Windows
 FontCache3.0.0.0 - Кэш шрифтов Windows Presentation Foundation 3.0.0.0
+FoxitReaderUpdateService - Foxit Reader Update Service
 GoogleChromeElevationService - Google Chrome Elevation Service
 HomeGroupListener - Прослушиватель домашней группы
 HomeGroupProvider - Поставщик домашней группы
