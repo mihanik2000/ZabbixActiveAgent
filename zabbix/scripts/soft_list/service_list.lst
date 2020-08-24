@@ -1,5 +1,4 @@
 ALG - Служба шлюза уровня приложения
-AVP20.0 - Kaspersky Anti-Virus Service 20.0
 AdobeFlashPlayerUpdateSvc - Adobe Flash Player Update Service
 AeLookupSvc - Информация о совместимости приложений
 AppIDSvc - Удостоверение приложения
@@ -138,7 +137,6 @@ hidserv - Доступ к HID-устройствам
 hkmsvc - Управление сертификатами и ключом работоспособности
 idsvc - Windows CardSpace
 iphlpsvc - Вспомогательная служба IP
-klvssbridge64_20.0 - Kaspersky Volume Shadow Copy Service Bridge 20.0
 lltdsvc - Тополог канального уровня
 lmhosts - Модуль поддержки NetBIOS через TCP/IP
 msiserver - Установщик Windows
