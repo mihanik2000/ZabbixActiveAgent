@@ -1,6 +1,3 @@
-1C:Предприятие 8 (8.3.15.1700)
-1C:Предприятие 8 (8.3.15.1830)
-1C:Предприятие 8 (8.3.17.1386)
 7-Zip 19.00 (x64)
 Adobe Flash Player 32 PPAPI
 Bat To Exe Converter version 3.0.10
@@ -28,18 +25,117 @@ Microsoft Report Viewer Redistributable 2008 (KB971119)
 Microsoft Report Viewer Redistributable 2008 SP1
 Microsoft Report Viewer Redistributable 2008 SP1 Language Pack - RUS
 Microsoft SQL Server 2008 R2 Native Client
+Microsoft Visual C++ 2005 Redistributable - x64 8.0.50727.4053 False
+Microsoft Visual C++ 2005 Redistributable - x64 8.0.50727.42 False
+Microsoft Visual C++ 2005 Redistributable - x64 8.0.51011 False
+Microsoft Visual C++ 2005 Redistributable - x64 8.0.57102 False
+Microsoft Visual C++ 2005 Redistributable - x64 8.0.58298 False
+Microsoft Visual C++ 2005 Redistributable - x64 8.0.59192 False
+Microsoft Visual C++ 2005 Redistributable - x86 8.0.50727.4053 False
+Microsoft Visual C++ 2005 Redistributable - x86 8.0.50727.42 False
+Microsoft Visual C++ 2005 Redistributable - x86 8.0.51011 False
+Microsoft Visual C++ 2005 Redistributable - x86 8.0.57103 False
+Microsoft Visual C++ 2005 Redistributable - x86 8.0.58299 False
+Microsoft Visual C++ 2005 Redistributable - x86 8.0.59193 False
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.21022 False
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.21022.0 False
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.21022.218 False
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30411 False
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729 False
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.0 False
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4048 False
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4148 False
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4148.0 False
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.5570 False
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.21022 False
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.21022.0 False
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.21022.218 False
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30411 False
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729 False
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.0 False
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4048 False
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148 False
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148.0 False
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.5570 False
 Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161
-Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219
-Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219
-Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501
-Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005
-Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005
-Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.23.27820
-Microsoft Visual C++ 2017 Redistributable (x64) - 14.14.26405
-Microsoft Visual C++ 2017 x64 Additional Runtime - 14.14.26405
-Microsoft Visual C++ 2017 x64 Minimum Runtime - 14.14.26405
-Microsoft Visual C++ 2019 X86 Additional Runtime - 14.23.27820
-Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.23.27820
+Microsoft Visual C++ 2010 Redistributable - x64 10.0.30319 False
+Microsoft Visual C++ 2010 Redistributable - x64 10.0.40219
+Microsoft Visual C++ 2010 Redistributable - x86 10.0.30319 False
+Microsoft Visual C++ 2010 Redistributable - x86 10.0.40219
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.50727 False
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.50727 False Eng
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.51106 False
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.51106 False Eng
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.60610 False
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.60610 False Eng
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030 False Eng
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.50727 False
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.50727 False Eng
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.51106 False
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.51106 False Eng
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.60610 False
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.60610 False Eng
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030 False Eng
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.50727 False
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.51106 False
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.60610 False
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.50727 False
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.51106 False
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.60610 False
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030
+Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.50727 False
+Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.51106 False
+Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.60610 False
+Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030
+Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.50727 False
+Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.51106 False
+Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.60610 False
+Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.21005 False
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.21005 False Eng
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501 False
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501 False Eng
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40649 False
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40649 False Eng
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40660 False
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40660 False Eng
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664 False Eng
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.21005 False
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.21005 False Eng
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501 False
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501 False Eng
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40649 False
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40649 False Eng
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660 False
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660 False Eng
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40664
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40664 False Eng
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005 False
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40649 False
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40660 False
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005 False
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40649 False
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40660 False
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005 False
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40649 False
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40660 False
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40664
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005 False
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40649 False
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40660 False
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40664
+Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.28.29115
+Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.28.29115
+Microsoft Visual C++ 2019 X64 Additional Runtime - 14.28.29115
+Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.28.29115
+Microsoft Visual C++ 2019 X86 Additional Runtime - 14.28.29115
+Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.28.29115
 Microsoft XNA Framework Redistributable 4.0 Refresh
 Mozilla Firefox 79.0 (x64 ru)
 Mozilla Maintenance Service
@@ -49,15 +145,12 @@ Notepad++ (64-bit x64)
 Pantum M6550NW Series
 PuTTY release 0.70 (64-bit)
 PyScripter 3.6.3 (x64)
-Python 2.7 pywin32-227
-Python 2.7.16 (64-bit)
+Python 2.7.18 (64-bit)
 Realtek High Definition Audio Driver
 Remote Control by ITarian
 SP 260 Series Software Uninstall
 SparkleShare
 Synaptics Pointing Device Driver
-TeamViewer
-The Dude
 Transmission 2.94 (d8e60ee44f) (x64)
 Unreal Commander v3.57
 Update for Microsoft .NET Framework 4.7.2 (KB4087364)
@@ -69,6 +162,7 @@ Viber
 WebCam SCB-0350M
 WinSCP 5.13.4
 Windows 7 USB/DVD Download Tool
+Wing Personal 7.2.4.0
 Xerox WorkCentre 3025
 Xming 6.9.0.31
 ownCloud
@@ -76,5 +170,4 @@ smartmontools
 vs_tipsmsi
 Братья-пилоты 1, версия 1.0
 Драйверы Рутокен
-КриптоПро CSP
 Просмотр руководства пользователя
