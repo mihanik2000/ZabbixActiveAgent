@@ -232,7 +232,7 @@ def Download_File(myurl,mypath):
 
 def main():
 
-    print Simple_Log_Entry ( 0 )
+    print Simple_Log_Entry ( 0 , "Проверка связи")
 
 if __name__ == '__main__':
     main()
