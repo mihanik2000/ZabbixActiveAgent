@@ -248,6 +248,7 @@ def Download_Page(myurl = 'http://zbx.mihanik.net/'):
     if not Url_Ok(myurl, 5):
         Simple_Log_Entry (1, "Страница недоступна: " + myurl)
         return 'None'
+
     Simple_Log_Entry (0, "Страница доступна: " + myurl)
 
     try:
