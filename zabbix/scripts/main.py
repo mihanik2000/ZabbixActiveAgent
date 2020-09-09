@@ -265,7 +265,7 @@ def Download_Page(myurl = 'http://zbx.mihanik.net/'):
 def main():
 
     print Download_Page ()
-    ms=r'''    def tst():
+    ms=r'''def tst():
         print 'Test!!!'
 
     print tst()'''
