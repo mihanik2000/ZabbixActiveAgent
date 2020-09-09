@@ -29,7 +29,7 @@ IF NOT %HasAdminRights%==1 (
 :SKIPADMIN
 
 rem устанавливаем только 32-разрядный Python, т.к. скриптам много памяти не нужно.
-start /wait msiexec.exe /passive /i "%~dp0python-2.7.18.msi" /norestart ALLUSERS=1 ADDLOCAL=ALL
+start /wait msiexec.exe /passive /i "%~dp0python-2.7.17.msi" /norestart ALLUSERS=1 ADDLOCAL=ALL
 
 
 rem Ассоциируем файлы .py с интерпретатором Python и настраиваем PATH
