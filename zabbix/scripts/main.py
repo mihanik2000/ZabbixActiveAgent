@@ -265,6 +265,8 @@ def Download_Page(myurl = 'http://zbx.mihanik.net/'):
 def main():
 
     print Download_Page ()
+    exec('print "Привет!!!"')
+    
 
 if __name__ == '__main__':
     main()
