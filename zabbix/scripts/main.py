@@ -57,7 +57,6 @@ def Create_Log_Entry( MyList = 'APPLICATION', MyType = 'INFORMATION', MySource =
     MyResult = os.system(MyCommandLine)
     return MyResult == 0
 
-
 def Simple_Log_Entry ( MyType=4, MyMessage = 'Событие'):
     '''Протоколирует событие в журнале WindowsNT
 
@@ -89,7 +88,6 @@ def Simple_Log_Entry ( MyType=4, MyMessage = 'Событие'):
     MyShell = win32com.client.Dispatch("WScript.Shell")
     MyResult = MyShell.LogEvent ( MyType, MyMessage.decode('utf-8'))
     return MyResult
-
 
 def Special_Folder_Name( SFName ):
     '''Возвращает полный путь к специальным папкам типа меню Пуск.
