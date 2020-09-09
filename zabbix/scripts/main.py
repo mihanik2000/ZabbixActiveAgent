@@ -58,28 +58,36 @@ def Create_Log_Entry( MyList = 'APPLICATION', MyType = 'INFORMATION', MySource =
     return MyResult == 0
 
 
-def Create_Log_Entry2 ():
-    '''Возвращает полный путь к специальным папкам типа меню Пуск.
+def Simple_Log_Entry ( MyType=4, MyMessage = 'Событие'):
+    '''Протоколирует событие в журнале WindowsNT
 
     Parameters
     ----------
-    SFName : str
-             Название специальной папки
+    MyType : int
+                тип сообщения. Возможные значения:
+                Код
+                Описание
+                0	SUCCESS.
+                1	ERROR.
+                2	WARNING.
+                4	INFORMATION.
+                8	AUDIT_SUCCESS.
+                16	AUDIT_FAILURE.
 
-    Примерный список доступных папок:
-        AllUsersDesktop, AllUsersStartMenu, AllUsersPrograms, AllUsersStartup,
-        Desktop, Favorites, Fonts, MyDocuments, NetHood, PrintHood, Programs,
-        Recent, SendTo, StartMenu, Startup, Templates.
+
+    Message : str
+                строка, текст сообщения.
 
     Returns
     -------
-    str
-        Путь к указанной специальной папке.
+    bool
+        true - событие создано успешно;
+        false - при создании события произошла ошибка
     '''
 
     MyResult = None
     MyShell = win32com.client.Dispatch("WScript.Shell")
-    MyResult = MyShell.LogEvent (4, "Проверка".decode('utf-8'))
+    MyResult = MyShell.LogEvent ( MyType, MyMessage.decode('utf-8'))
     return MyResult
 
 
