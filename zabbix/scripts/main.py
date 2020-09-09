@@ -187,7 +187,7 @@ def Url_Ok( url, timeout=5 ):
         return urllib2.urlopen(url,timeout=timeout).getcode() == 200
     except urllib2.URLError as e:
         return False
-    except socket.timeout as e:
+    except:
         return False
 
 def Download_File(myurl,mypath):
