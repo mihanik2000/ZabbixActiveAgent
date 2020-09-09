@@ -9,7 +9,6 @@ StartAgents=0
 # Адрес сервера
 ServerActive=zbx.mihanik.net
 
-# Если потребуется автоматическая регистрация укажем нужные параметры.
 #HostMetadata:	test	131d9fe0-753c-4913-bc7c-f10584cd823c
 
 ####### USER-DEFINED MONITORED PARAMETERS #######
