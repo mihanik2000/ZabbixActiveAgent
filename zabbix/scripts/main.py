@@ -23,17 +23,17 @@ def Create_Log_Entry( MyList = 'APPLICATION', MyType = 'INFORMATION', MySource =
     '''Cоздаёт событие в системном журнале
 
     Parameters
-    ---------- 
+    ----------
     MyList : str
             Указывает имя журнала событий, в котором будет создано событие. Допустимые имена журналов — APPLICATION или SYSTEM.
-    
+
     MyType : str
              Тип создаваемого события. Допустимые типы: SUCCESS, ERROR, WARNING, INFORMATION.
-             
+
     MySource : str
                Источник для этого события (если не указан, по умолчанию используется "eventcreate").
                Допустимым источником является любая строка, представляющая приложение или компонент, создающий это событие.
-    
+
     MyID : int
            Код события для этого события.
            Допустимым кодом события является любое число в диапазоне от 1 до 1000.
@@ -46,22 +46,23 @@ def Create_Log_Entry( MyList = 'APPLICATION', MyType = 'INFORMATION', MySource =
     bool
         true - событие создано успешно;
         false - при создании события произошла ошибка
-        
+
     Warns
     -----
         Для работы функции часто требуются права администратора. Кириллицу в параметрах не использовать!!!
 
     '''
-    
+
     MyCommandLine =  r'EVENTCREATE.EXE /L ' + MyList + r' /T ' + MyType + r' /SO "' + MySource + r'" /ID ' + str(MyID) + r' /D "' + MyDef + '"'
     MyResult = os.system(MyCommandLine)
     return MyResult == 0
 
-def Special_Folder_Name( SFName ):
+
+def Create_Log_Entry2 ():
     '''Возвращает полный путь к специальным папкам типа меню Пуск.
 
     Parameters
-    ---------- 
+    ----------
     SFName : str
              Название специальной папки
 
@@ -69,7 +70,32 @@ def Special_Folder_Name( SFName ):
         AllUsersDesktop, AllUsersStartMenu, AllUsersPrograms, AllUsersStartup,
         Desktop, Favorites, Fonts, MyDocuments, NetHood, PrintHood, Programs,
         Recent, SendTo, StartMenu, Startup, Templates.
-        
+
+    Returns
+    -------
+    str
+        Путь к указанной специальной папке.
+    '''
+
+    MyResult = None
+    MyShell = win32com.client.Dispatch("WScript.Shell")
+    MyResult = MyShell.LogEvent (4, "Your Message Here")
+    return MyResult
+
+
+def Special_Folder_Name( SFName ):
+    '''Возвращает полный путь к специальным папкам типа меню Пуск.
+
+    Parameters
+    ----------
+    SFName : str
+             Название специальной папки
+
+    Примерный список доступных папок:
+        AllUsersDesktop, AllUsersStartMenu, AllUsersPrograms, AllUsersStartup,
+        Desktop, Favorites, Fonts, MyDocuments, NetHood, PrintHood, Programs,
+        Recent, SendTo, StartMenu, Startup, Templates.
+
     Returns
     -------
     str
@@ -123,7 +149,7 @@ def Create_Shortcut( ShortcutName, TargetPath, Arguments=' ', Description='Оп�
 def Is_Admin():
     '''
     Функция проверки наличия прав администратора
-    
+
     Returns
     -------
     bool
@@ -138,21 +164,21 @@ def Is_Admin():
 def Url_Ok( url, timeout=5 ):
     '''
     Функция проверки доступности URL
-    
+
     Parameters
     ----------
     url : str
           Проверяемый URL
-          
+
     imeout : int
              timeout ожидания
-             
+
     Returns
     -------
     bool
          true - URL доступен
          false - URL недоступен
-    
+
     '''
     try:
         return urllib2.urlopen(url,timeout=timeout).getcode() == 200
@@ -164,46 +190,46 @@ def Url_Ok( url, timeout=5 ):
 def Download_File(myurl,mypath):
     '''
     Функция скачивания файла
- 
+
     Parameters
-    ----------   
+    ----------
     myurl : str
            Откуда скачиваем файл
-           
+
     mypath : str
             куда скачиваем файл
-    
+
     Returns
     -------
     bool
         true  - успешное скачивание
         false - скачивание не удалось
-    
+
     '''
     if not Url_Ok(myurl, 5):
-        Create_Log_Entry(MyType='ERROR', MyDef='File not available: ' + myurl) 
+        Create_Log_Entry(MyType='ERROR', MyDef='File not available: ' + myurl)
         return False
-    Create_Log_Entry(MyType='SUCCESS', MyDef= 'File available: '+ myurl) 
-    
+    Create_Log_Entry(MyType='SUCCESS', MyDef= 'File available: '+ myurl)
+
     try:
         mycontent = urllib2.urlopen(myurl)
         output = open(mypath,'wb')
         output.write(mycontent.read())
         output.close()
     except urllib2.HTTPError, error:
-        Create_Log_Entry(MyType='ERROR', MyDef='Error: ' + error.read()) 
-        Create_Log_Entry(MyType='ERROR', MyDef= 'File not downloaded: ' + myurl) 
+        Create_Log_Entry(MyType='ERROR', MyDef='Error: ' + error.read())
+        Create_Log_Entry(MyType='ERROR', MyDef= 'File not downloaded: ' + myurl)
         return False
     except:
-        Create_Log_Entry(MyType='ERROR', MyDef= 'Something went wrong while downloading the file: ' + myurl) 
+        Create_Log_Entry(MyType='ERROR', MyDef= 'Something went wrong while downloading the file: ' + myurl)
         return False
     else:
-        Create_Log_Entry(MyType='SUCCESS', MyDef= 'The file has been downloaded: '+ myurl) 
+        Create_Log_Entry(MyType='SUCCESS', MyDef= 'The file has been downloaded: '+ myurl)
         return True
 
 def main():
-    
-    Download_File (r'https://fanfan.softium-deti.ru:820/files/Bills/4/F8AAE34-75AC-497B-BC8F-67B06F50B9F1.pdf?filename=softium_08_2020.pdf', r'C:\distr\tst.txt')
+
+    Create_Log_Entry2
 
 
 if __name__ == '__main__':
