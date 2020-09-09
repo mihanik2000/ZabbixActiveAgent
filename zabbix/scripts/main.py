@@ -246,19 +246,19 @@ def Download_Page(myurl = 'http://zbx.mihanik.net/'):
 
     '''
     if not Url_Ok(myurl, 5):
-        Create_Log_Entry(MyType='ERROR', MyDef='Page not available: ' + myurl)
+        Simple_Log_Entry (1, "Страница недоступна: " + myurl)
         return 'None'
-    Create_Log_Entry(MyType='SUCCESS', MyDef= 'Page available: '+ myurl)
+    Simple_Log_Entry (0, "Страница доступна: " + myurl)
 
     try:
         mycontent = urllib2.urlopen(myurl)
         return mycontent.read()
     except urllib2.HTTPError, error:
-        Create_Log_Entry(MyType='ERROR', MyDef='Error: ' + error.read())
-        Create_Log_Entry(MyType='ERROR', MyDef= 'Page not downloaded: ' + myurl)
-        return False
+        Simple_Log_Entry (1, 'Error: ' + error.read())
+        Simple_Log_Entry (1, 'Страница не загружена: ' + myurl
+        return 'None'
     except:
-        Create_Log_Entry(MyType='ERROR', MyDef= 'Something went wrong while downloading the file: ' + myurl)
+        Simple_Log_Entry (1, 'Что-то пошло не так при загрузке страницы: ' + myurl)
         return 'None'
 
 def main():
