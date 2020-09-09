@@ -79,7 +79,7 @@ def Create_Log_Entry2 ():
 
     MyResult = None
     MyShell = win32com.client.Dispatch("WScript.Shell")
-    MyResult = MyShell.LogEvent (4, "Your Message Here")
+    MyResult = MyShell.LogEvent (4, "Проверка")
     return MyResult
 
 
