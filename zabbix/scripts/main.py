@@ -237,8 +237,7 @@ def Download_File(myurl,mypath):
 
 def main():
 
-    print Create_Log_Entry2 ()
-
+    print Simple_Log_Entry ()
 
 if __name__ == '__main__':
     main()
