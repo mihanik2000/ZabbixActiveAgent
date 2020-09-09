@@ -64,6 +64,7 @@ def Simple_Log_Entry ( MyType=4, MyMessage = 'Событие'):
     ----------
     MyType : int
                 тип сообщения.
+                
                 Код     Описание
                 0	SUCCESS.
                 1	ERROR.
