@@ -229,7 +229,7 @@ def Download_File(myurl,mypath):
 
 def main():
 
-    Create_Log_Entry2
+    print Create_Log_Entry2 ()
 
 
 if __name__ == '__main__':
