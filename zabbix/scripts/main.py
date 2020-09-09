@@ -230,9 +230,40 @@ def Download_File(myurl,mypath):
         Create_Log_Entry(MyType='SUCCESS', MyDef= 'The file has been downloaded: '+ myurl)
         return True
 
+def Download_Page(myurl = 'http://zbx.mihanik.net/'):
+    '''
+    Функция скачивания страницы по URL в память ПК
+
+    Parameters
+    ----------
+    myurl : str
+           Откуда скачиваем файл
+
+    Returns
+    -------
+    str
+        Полный текст страницы
+
+    '''
+    if not Url_Ok(myurl, 5):
+        Create_Log_Entry(MyType='ERROR', MyDef='Page not available: ' + myurl)
+        return 'None'
+    Create_Log_Entry(MyType='SUCCESS', MyDef= 'Page available: '+ myurl)
+
+    try:
+        mycontent = urllib2.urlopen(myurl)
+        return mycontent.read()
+    except urllib2.HTTPError, error:
+        Create_Log_Entry(MyType='ERROR', MyDef='Error: ' + error.read())
+        Create_Log_Entry(MyType='ERROR', MyDef= 'Page not downloaded: ' + myurl)
+        return False
+    except:
+        Create_Log_Entry(MyType='ERROR', MyDef= 'Something went wrong while downloading the file: ' + myurl)
+        return 'None'
+
 def main():
 
-    print Simple_Log_Entry ( 0 , "Проверка связи")
+    print Download_Page ()
 
 if __name__ == '__main__':
     main()
