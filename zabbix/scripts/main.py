@@ -268,8 +268,8 @@ def main():
     ms='''
     def tst():
         print 'Test!!!'
-        
-    tst()
+    
+    print tst()
     '''
     exec(ms)
     
