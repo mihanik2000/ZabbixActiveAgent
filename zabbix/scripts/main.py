@@ -84,10 +84,8 @@ def Simple_Log_Entry ( MyType=4, MyMessage = 'Событие'):
         false - при создании события произошла ошибка
     '''
 
-    MyResult = None
     MyShell = win32com.client.Dispatch("WScript.Shell")
-    MyResult = MyShell.LogEvent ( MyType, MyMessage.decode('utf-8'))
-    return MyResult
+    return MyShell.LogEvent ( MyType, MyMessage.decode('utf-8'))
 
 def Special_Folder_Name( SFName ):
     '''Возвращает полный путь к специальным папкам типа меню Пуск.
