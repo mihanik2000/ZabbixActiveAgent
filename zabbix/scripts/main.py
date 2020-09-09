@@ -255,7 +255,7 @@ def Download_Page(myurl = 'http://zbx.mihanik.net/'):
         return mycontent.read()
     except urllib2.HTTPError, error:
         Simple_Log_Entry (1, 'Error: ' + error.read())
-        Simple_Log_Entry (1, 'Страница не загружена: ' + myurl
+        Simple_Log_Entry (1, 'Страница не загружена: ' + myurl)
         return 'None'
     except:
         Simple_Log_Entry (1, 'Что-то пошло не так при загрузке страницы: ' + myurl)
