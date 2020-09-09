@@ -64,7 +64,7 @@ def Simple_Log_Entry ( MyType=4, MyMessage = 'Событие'):
     ----------
     MyType : int
                 тип сообщения.
-                
+
                 Код     Описание
                 0	SUCCESS.
                 1	ERROR.
@@ -265,9 +265,12 @@ def Download_Page(myurl = 'http://zbx.mihanik.net/'):
 def main():
 
     print Download_Page ()
-    ms=r'''def tst():\n    print 'Test!!!'\n\nprint tst()'''
+    ms=r'''    def tst():
+        print 'Test!!!'
+
+    print tst()'''
     exec(ms)
-    
+
 
 if __name__ == '__main__':
     main()
