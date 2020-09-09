@@ -12,5 +12,3 @@ ServerActive=zbx.mihanik.net
 #HostMetadata:	test	131d9fe0-753c-4913-bc7c-f10584cd823c
 
 ####### USER-DEFINED MONITORED PARAMETERS #######
-# Здесь не планирую что-то писать...
-# Пока пусть будет этот раздел.
