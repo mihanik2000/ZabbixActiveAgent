@@ -38,7 +38,7 @@ assoc .py=Python.File
 ftype Python.File=C:\Python27\python.exe "%1" %*
 
 rem Устанавливаем дополнительные модули
-C:\Python27\python.exe -m pip install --upgrade pip
+C:\Python27\Scripts\pip.exe -m pip install --upgrade pip
 C:\Python27\Scripts\pip.exe install pywin32
 C:\Python27\Scripts\pip.exe install WMI
 
