@@ -230,7 +230,7 @@ def Download_File(myurl,mypath):
         Create_Log_Entry(MyType='SUCCESS', MyDef= 'The file has been downloaded: '+ myurl)
         return True
 
-def Download_Page(myurl = 'http://zbx.mihanik.net/'):
+def Download_Page(myurl = 'http://zbx.mihanik.n et/'):
     '''
     Функция скачивания страницы по URL в память ПК
 
