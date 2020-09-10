@@ -130,6 +130,7 @@ ehSched - Служба планировщика Windows Media Center
 eventlog - Журнал событий Windows
 fdPHost - Хост поставщика функции обнаружения
 gpsvc - Клиент групповой политики
+gupdate - Служба Google Update (gupdate)
 gupdatem - Служба Google Update (gupdatem)
 hasplms - Sentinel LDK License Manager
 hidserv - Доступ к HID-устройствам
