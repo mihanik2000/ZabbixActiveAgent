@@ -58,6 +58,4 @@ net start "Zabbix Agent"
 	
 :END
 
-TIMEOUT /T 5 /NOBREAK
-
 EXIT /B
