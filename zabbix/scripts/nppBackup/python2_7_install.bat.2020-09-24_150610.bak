@@ -48,4 +48,6 @@ ECHO .
 	
 :END
 
+PAUSE
+
 EXIT /B
