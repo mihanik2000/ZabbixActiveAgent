@@ -156,7 +156,7 @@ vds - Виртуальный диск
 wbengine - Служба модуля архивации на уровне блоков
 wcncsvc - Немедленные подключения Windows - регистратор настройки
 wercplsupport - Поддержка элемента панели управления "Отчеты о проблемах и их решениях"
-wmiApSrv - WMI Performance Adapter
+wmiApSrv - Адаптер производительности WMI
 wscsvc - Центр обеспечения безопасности
 wuauserv - Центр обновления Windows
 wudfsvc - Windows Driver Foundation - User-mode Driver Framework
