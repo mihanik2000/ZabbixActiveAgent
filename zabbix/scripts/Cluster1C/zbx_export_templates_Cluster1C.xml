@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.4</version>
-    <date>2020-12-21T06:18:31Z</date>
+    <date>2021-03-21T02:42:38Z</date>
     <groups>
         <group>
             <name>Templates/Modules</name>
@@ -110,7 +110,7 @@
                         <item_prototype>
                             <name>1C Base {#IBDNAME} - {#IBDDESCR} - working users count</name>
                             <type>ZABBIX_ACTIVE</type>
-                            <key>vfs.file.regexp[C:\zabbix\scripts\Cluster1C\Bases_List.txt,^.*{#IBDNAME}.*$,CP866]</key>
+                            <key>vfs.file.regexp[C:\zabbix\scripts\Cluster1C\Bases_List.txt,^.*&quot;{#IBDNAME}&quot;.*$,CP866]</key>
                             <delay>10m</delay>
                             <value_type>FLOAT</value_type>
                             <applications>
