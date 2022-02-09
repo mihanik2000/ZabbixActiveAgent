@@ -49,7 +49,7 @@ If Exist "C:\Program Files (x86)" (
 )
 
 rem Устанавливаем заббикс
-c:/zabbix/zabbix_agentd.exe --config c:/zabbix/zabbix_agentd.win.conf --install
+c:\zabbix\zabbix_agentd.exe --config c:\zabbix\zabbix_agentd.win.conf --install
 net start "Zabbix Agent"
 
 :CONTINUE
