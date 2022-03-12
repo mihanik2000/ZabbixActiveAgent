@@ -52,7 +52,7 @@ If Exist "C:\Program Files (x86)" (
 	copy /y C:\zabbix\bin_v2\win32\*.exe C:\zabbix\
 )
 
-rem Устанавливаем заббикс
+rem Устанавливаем службу заббикс
 c:\zabbix\zabbix_agent2.exe --config c:\zabbix\zabbix_agentd2.win.conf --install
 net start "Zabbix Agent 2"
 
